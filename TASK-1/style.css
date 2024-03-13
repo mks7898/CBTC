@@ -1,0 +1,108 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #e2d5d5;
+    padding: 20px;
+}
+h1{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: cornflowerblue;
+    box-shadow: 0 0 2px 2px;
+    border-radius: 5px;
+}
+.container{
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    margin-top: 30px;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input[type="text"]{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+}
+form input[type="submit"]{
+    background-color: rgb(12, 100, 233);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in;
+}
+form input[type="submit"]:hover{
+    background-color: aqua;
+    color: black;
+    
+}
+.icon img{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.temperature{
+    font-size: 35px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    margin: 20px 0;
+}
+
+.discription{
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 2px 2px rgba(78, 49, 5, 0.5);
+    box-shadow: 0 0 2px 2px;
+    margin-bottom: 20px;
+    height: 30px;
+    padding: 5px;
+    background-color: aqua;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.details > div{
+    padding: 20px;
+    background-color: #df5454;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 0  2px rgb(90, 75, 7);
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+    height: 45px;
+    box-shadow: 0 0 2px 2px rgba(1, 1, 1,0.7);
+
+}
+@media (max-width: 400px){
+    form{
+        flex-direction: column;
+    }
+    form input[type="text"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
